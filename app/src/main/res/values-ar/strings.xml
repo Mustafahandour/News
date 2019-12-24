@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أخبار</string>
+    <string name="source">المصدر:</string>
+    <string name="author">المؤلف:</string>
+    <string name="title_home">القائمة</string>
+    <string name="title_notifications">الإشعارات</string>
+    <string name="title_dashboard">عن البرنامج</string>
+</resources>
