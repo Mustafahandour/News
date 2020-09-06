@@ -1,6 +1,7 @@
 package com.example.news.data.local;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
@@ -9,16 +10,13 @@ public class SharedPreferencesManger {
 
     public static SharedPreferences sharedPreferences = null;
 
-    public static String NEWS_NAME = "NEWS_NAME";
-    public static String NAME_EGY= "NAME_EGY";
-    public static String NAME_SA= "NAME_SA";
-    public static String NAME_US= "NAME_US";
+
 
 
     public static void setSharedPreferences(Activity activity) {
         if (sharedPreferences == null) {
             sharedPreferences = activity.getSharedPreferences(
-                    "User", activity.MODE_PRIVATE);
+                    "User", Context.MODE_PRIVATE);
         }
     }
 
@@ -59,12 +57,6 @@ public class SharedPreferencesManger {
             editor.putString(data_Key, StringData);
             editor.commit();
         }
-    }
-
-
-
-    public static void saveUserType(Activity activity, String userType) {
-        SaveData(activity, NEWS_NAME, userType);
     }
 
 

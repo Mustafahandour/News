@@ -6,4 +6,7 @@
     <string name="title_home">القائمة</string>
     <string name="title_notifications">الإشعارات</string>
     <string name="title_dashboard">عن البرنامج</string>
+    <string name="for_more">للمزيد</string>
+    <string name="search_for_news">إبحث عن الاخبار...</string>
+    <string name="select_category">إختار موضوع...</string>
 </resources>

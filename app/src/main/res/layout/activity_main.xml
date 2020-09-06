@@ -1,41 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--<TextView-->
-<!--    app:layout_constraintTop_toTopOf="parent"-->
-<!--    android:id="@+id/homa-activity_title"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="@dimen/dim_50dp"-->
-<!--    android:gravity="center"-->
-<!--    android:textColor="@color/white"-->
-<!--    android:textStyle="bold"-->
-<!--    android:textSize="@dimen/font_20sp"-->
-<!--    android:background="@color/dark_white"/>-->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+
+    <LinearLayout
+        android:id="@+id/activity_main_ll_nav_container"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/activity_main_ll_nav_ib_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            app:srcCompat="@drawable/ic_category_brands" />
+
+        <ImageButton
+            android:id="@+id/activity_main_ll_nav_ib_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            app:srcCompat="@drawable/ic_globe_solid" />
+
+        <ImageButton
+
+            android:id="@+id/activity_main_ll_nav_ib_about"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/blue"
+
+            app:srcCompat="@drawable/ic_about_solid" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/dark_white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_marginTop="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+    <FrameLayout
+        android:id="@+id/activity_main_fl_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_ll_nav_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView">
 
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

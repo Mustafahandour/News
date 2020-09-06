@@ -5,4 +5,76 @@
     <string name="title_notifications">Notifications</string>
     <string name="source">Source:</string>
     <string name="author">Author:</string>
+    <string name="for_more">For More:</string>
+    <string name="logo" translatable="false">logo</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="search_for_news">search for news....</string>
+    <string name="select_category">Select Category...</string>
+    <string-array name="countries">
+        <item> ae </item>
+        <item> ar </item>
+        <item> at </item>
+        <item> au </item>
+        <item> au </item>
+        <item> be </item>
+        <item> bg </item>
+        <item> br </item>
+        <item> ca </item>
+        <item> ch </item>
+        <item> cn </item>
+        <item> co </item>
+        <item> cu </item>
+        <item> cz </item>
+        <item> de </item>
+        <item> eg </item>
+        <item> fr </item>
+        <item> gb </item>
+        <item> gr </item>
+        <item> hk </item>
+        <item> hu </item>
+        <item> id </item>
+        <item> ie </item>
+        <item> il </item>
+        <item> in </item>
+        <item> it </item>
+        <item> jp </item>
+        <item> kr </item>
+        <item> lt </item>
+        <item> lv </item>
+        <item> ma </item>
+        <item> mx </item>
+        <item> my </item>
+        <item> ng </item>
+        <item> nl </item>
+        <item> no </item>
+        <item> nz </item>
+        <item> ph </item>
+        <item> pl </item>
+        <item> pt </item>
+        <item> ro </item>
+        <item> rs </item>
+        <item> ru </item>
+        <item> sa </item>
+        <item> se </item>
+        <item> sg </item>
+        <item> si </item>
+        <item> sk </item>
+        <item> th </item>
+        <item> tr </item>
+        <item> tw </item>
+        <item> ua </item>
+        <item> us </item>
+        <item> ve </item>
+        <item> za </item>
+
+    </string-array>
+    <string-array name="category">
+        <item> sports</item>
+        <item>technology </item>
+        <item>science </item>
+        <item> health</item>
+
+    </string-array>
+
 </resources>
+

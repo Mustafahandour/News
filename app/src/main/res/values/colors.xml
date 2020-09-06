@@ -10,4 +10,7 @@
     <color name="deep_blue">#13193C</color>
     <color name="pink">#E0BABA</color>
     <color name="dark_white">#A5A4B6</color>
+    <color name="blue">#4786B5</color>
+    <color name="light_blue">#B9CBDD</color>
+    <color name="over_light_blue">#EAF4FD</color>
 </resources>
